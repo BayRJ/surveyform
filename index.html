@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="full-name">Enter Your Full Name: <input id="name" 
+                name="full-name" type="text" placeholder="e.g. Bayeng,Renz Jay" required>
+            </label>
+            <label id="email-label" for="email">Enter Your Email Address: <input id="email" 
+                name="email" type="email" placeholder="e.g.bayrenz@gmail.com" required>
+            </label>
+            <label id="number-label" for="number">Enter Your Phone Number: <input id="number" 
+                name="number" min="11" max="13" type="number" placeholder="0912345678" required>
+            </label>  
+        </fieldset>
+        <fieldset>
+        <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+        </select>
+        <label for="super-handsome"><input id="super-handsome" type="radio" 
+            name="face-type" class="inline" value="super-handsome" /> Super Handsome</label>
+        <label for="medium-handsome"><input id="medium-handsome" type="radio" 
+            name="face-type" class="inline" value="medium-handsome"/> Medium Handsome</label>
+    </fieldset>
+    <fieldset>
+        <input type="checkbox" value="terms-yes">I accept terms and conditions.
+        <input type="checkbox" value="terms-no">I don't accept the terms and conditions.
+        <label for="bio">Provide a bio:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+    </fieldset>
+    <button id="submit" type="submit" value="Submit" >Submit</button>
+    </form>
+
+</body>
+</html>
